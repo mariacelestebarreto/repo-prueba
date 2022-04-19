@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+header{
+    background-image: linear-gradient(to right, red, orange, yellow, blue, blueviolet);
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    padding: 20px;
+    margin: 10px;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    color: black;
+}
+
+input:focus{
+    transform: scale(2, 2);
+}
+
+input:hover{
+    border-radius: 30px;
+}
+
+.rotar{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    /*transform: rotate(75deg);*/
+    transition: height  2s, widht 2s; 
+}
+.rotar:hover{
+    height: 200px;
+    width: 300px;
+}
+h2{
+    text-align: center;
+    color: blue;
+    animation-name: gato;
+    animation-duration: 2s;
+    animation-iteration-count: ease-in;
+    animation-delay: 3s;
+}
+
+@keyframes gato{
+    0%{
+        color: blue;
+        font-size: 32px;
+    }
+    25%{
+        background-image: linear-gradient(to right, red, blue);
+        font-size: 100px;
+    }
+    50%{
+        color: chartreuse;
+        transform: rotate(35deg);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    100%{
+        background-color: chocolate;
+    }
+}
